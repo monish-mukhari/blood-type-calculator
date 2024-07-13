@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Blood Type Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+        <h1>Child Blood Type Calculator</h1>
+        <form id="bloodTypeForm">
+            <div class="mother-container">
+                <div class="input-group">
+                    <label for="motherBloodType">Mother's Blood Type:</label>
+                    <select id="motherBloodType">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="AB">AB</option>
+                        <option value="O">O</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="mother-rh">Mother's Rh Factor:</label>
+                    <select id="mother-rh">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="father-container">
+                <div class="input-group">
+                    <label for="fatherBloodType">Father's Blood Type:</label>
+                    <select id="fatherBloodType">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="AB">AB</option>
+                        <option value="O">O</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="father-rh">Father's Rh Factor</label>
+                    <select id="father-rh">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div class="results" id="result"></div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
+
