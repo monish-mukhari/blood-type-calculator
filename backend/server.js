@@ -45,9 +45,6 @@ app.post('/calculate', (req, res) => {
 
     res.json({ possibleBloodTypes, possibleRhFactors });
 
-    //----------------------------------------------------------------
-
-
 });
 
 
